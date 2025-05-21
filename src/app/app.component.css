@@ -1,10 +1,14 @@
-body {
-  background-color: #f8f9fa;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 .container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+
+:host {
+  display: block;
+  background-color: #ccccff; /* periwinkle */
+  padding: 2rem 0;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
