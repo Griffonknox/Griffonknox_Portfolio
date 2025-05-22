@@ -12,3 +12,7 @@
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+.cursor-pointer {
+  cursor: pointer
+}

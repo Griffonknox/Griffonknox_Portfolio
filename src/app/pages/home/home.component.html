@@ -15,11 +15,13 @@
 <!-- Thumbnail Section -->
 <div class="row text-center">
   <div class="col-md-4 mb-3">
-    <div class="card">
+    <div class="card text-center" (click)="goTo('resume')">
       <div class="card-body">
-        <h5 class="card-title">Navbar Example 1</h5>
-        <p class="card-text">A minimal top nav bar with icons.</p>
-        <button class="btn btn-outline-primary">Preview</button>
+        <h5 class="card-title">
+          <i class="bi bi-file-earmark-text"></i>View My Resume
+        </h5>
+        <p class="card-text">Check out my experience and skills.</p>
+        <button class="btn btn-outline-light mt-2">Go</button>
       </div>
     </div>
   </div>
