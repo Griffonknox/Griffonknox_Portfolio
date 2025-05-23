@@ -1,21 +1,37 @@
 <!-- Profile Image Row -->
 <div class="row">
-  <div class="col text-center">
+  <div class="col text-center mb-3">
     <img
       src="/images/headshot.JPG"
       alt="Profile photo"
-      class="img-fluid rounded-circle mb-4"
-      style="max-width: 400px"
+      class="img-fluid rounded-circle mb-4 prof-image"
     />
-
-    <h2 class="mb-4">Hi, I'm Griffonknox!</h2>
+    <div class="p-3 card card-introduction">
+      <h2 style="opacity: 1"><b>Hi, I'm Griffonknox!</b></h2>
+      <p>
+        Software developer, skateboarder kind of guy that likes big men and I
+        can't get enough of all of the above. Get me at it please because I want
+        more :p
+      </p>
+    </div>
   </div>
 </div>
 
 <!-- Thumbnail Section -->
-<div class="row text-center">
+<div class="row text-center mt-3">
   <div class="col-md-4 mb-3">
-    <div class="card text-center" (click)="goTo('resume')">
+    <div class="card card-link text-center" (click)="goTo('portfolio')">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="bi bi-file-earmark-text"></i>View My Portfolio
+        </h5>
+        <p class="card-text">Check out previews of my work.</p>
+        <button class="btn btn-outline-light mt-2">Go</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card card-link text-center" (click)="goTo('resume')">
       <div class="card-body">
         <h5 class="card-title">
           <i class="bi bi-file-earmark-text"></i>View My Resume
@@ -26,16 +42,7 @@
     </div>
   </div>
   <div class="col-md-4 mb-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Navbar Example 2</h5>
-        <p class="card-text">A sidebar layout for dashboard-style apps.</p>
-        <button class="btn btn-outline-primary">Preview</button>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4 mb-3">
-    <div class="card">
+    <div class="card card-link">
       <div class="card-body">
         <h5 class="card-title">Navbar Example 3</h5>
         <p class="card-text">Responsive mobile-first navigation.</p>

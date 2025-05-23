@@ -14,7 +14,7 @@ export class AppComponent {
 
   particlesOptions = {
     background: {
-      color: { value: '#0d47a1' },
+      color: { value: '#d14bbf' },
     },
     fpsLimit: 60,
     particles: {
