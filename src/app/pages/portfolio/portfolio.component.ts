@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
-
 }
