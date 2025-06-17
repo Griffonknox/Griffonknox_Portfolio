@@ -63,3 +63,8 @@ For more information on using the Angular CLI, including detailed command refere
 ng build --output-path docs --base-href "/Griffonknox_Portfolio/"
 
 Builds the site for github pages, and stores in docs, after build manually go into docs and move items from browser folder back into docs folder for the githubs pages deploy. Repeat for every change and make sure to push to github the docs changes
+
+
+## Creating Additional Pages
+
+ng generate component pages/home
