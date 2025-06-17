@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgParticlesModule } from 'ng-particles';
 import { loadFull } from 'tsparticles';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NgParticlesModule],
+  imports: [RouterOutlet, NgParticlesModule, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
