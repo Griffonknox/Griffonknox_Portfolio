@@ -4,27 +4,16 @@
   }
   .card-link {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
     border-radius: 10px;
     border: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     background: linear-gradient(
       135deg,
-      rgba(30, 60, 114, 0.9) 0%,
-      rgba(42, 82, 152, 0.9) 100%
+      rgba(110, 45, 180, 0.95) 0%,
+      rgba(160, 70, 230, 0.95) 100%
     );
-    color: white;
+    color: #e0d7ff; /* light lavender text */
+    box-shadow: 0 6px 20px rgba(110, 45, 180, 0.6);
   }
-  
-  .card-introduction {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.75) !important;
-    color: black;
-  }
-  
   .prof-image{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 400px;

@@ -15,70 +15,66 @@ export class AppComponent {
 
   particlesOptions = {
     background: {
-      color: { value: '#d14bbf' },
+      color: { value: '#1e1e2f' }
     },
     fpsLimit: 60,
     particles: {
       number: {
-        value: 50,
+        value: 70,
         density: {
           enable: true,
-          area: 800,
-        },
+          area: 800
+        }
       },
       color: {
-        value: '#ffffff',
+        value: '#66fcf1'
       },
       shape: {
-        type: 'circle',
-      },
-      opacity: {
-        value: 0.5,
-      },
-      size: {
-        value: { min: 1, max: 5 },
+        type: 'circle'
       },
       links: {
         enable: true,
-        distance: 150,
-        color: '#ffffff',
-        opacity: 0.4,
-        width: 1,
+        distance: 120,
+        color: '#66fcf1',
+        opacity: 0.3,
+        width: 1
       },
       move: {
         enable: true,
-        speed: 1,
+        speed: 0.8,
         direction: 'none',
-        random: false,
-        straight: false,
         outModes: {
-          default: 'bounce',
+          default: 'out'
         },
+        trail: {
+          enable: false
+        }
       },
+      opacity: {
+        value: 0.4
+      },
+      size: {
+        value: { min: 1, max: 4 }
+      }
     },
     interactivity: {
       events: {
         onHover: {
           enable: true,
-          mode: 'repulse',
+          mode: 'grab'
         },
-        onClick: {
-          enable: true,
-          mode: 'push',
-        },
-        resize: true,
+        resize: true
       },
       modes: {
-        repulse: {
-          distance: 100,
-          duration: 0.4,
-        },
-        push: {
-          quantity: 4,
-        },
-      },
+        grab: {
+          distance: 150,
+          line_linked: {
+            opacity: 0.5
+          }
+        }
+      }
     },
-    detectRetina: true,
+    detectRetina: true
   } as const;
 
   async particlesInit(engine: any): Promise<void> {
