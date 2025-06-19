@@ -16,3 +16,8 @@
 .cursor-pointer {
   cursor: pointer
 }
+
+.navbar-toggler {
+  background-color: white;
+  border-radius: 5px;
+}
