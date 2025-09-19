@@ -1,12 +1,27 @@
+<div class="row mb-3">
+  <div class="col text-center">
+    <div class="resume-toggle">
+      <span [class.active]="selectedResume === 'fullstack'">Full-Stack</span>
+      <label class="switch">
+        <input type="checkbox" [checked]="selectedResume === 'backend'" (change)="toggleResume()" />
+        <span class="slider round"></span>
+      </label>
+      <span [class.active]="selectedResume === 'backend'">Backend</span>
+    </div>
+  </div>
+</div>
+
 <div class="row">
   <div class="col text-center">
     <div class="embed-responsive" style="height: 90vh">
-      <iframe
-        src="./images/resume.pdf"
-        width="100%"
-        height="100%"
-        style="border: none"
-      ></iframe>
+      <iframe [src]="resumeUrl" width="100%" height="100%" style="border: none"></iframe>
     </div>
+  </div>
+</div>
+
+<div class="row mt-2">
+  <div class="col text-center text-white">
+    <p *ngIf="selectedResume === 'fullstack'">Full-Stack: End-to-end development including frontend & backend integration.</p>
+    <p *ngIf="selectedResume === 'backend'">Backend: API development, database integrations, and server-side services.</p>
   </div>
 </div>
