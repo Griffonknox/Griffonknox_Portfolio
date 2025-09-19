@@ -1,12 +1,20 @@
 <div class="row mb-3">
   <div class="col text-center">
     <div class="resume-toggle">
-      <span [class.active]="selectedResume === 'fullstack'">Full-Stack</span>
-      <label class="switch">
-        <input type="checkbox" [checked]="selectedResume === 'backend'" (change)="toggleResume()" />
-        <span class="slider round"></span>
-      </label>
-      <span [class.active]="selectedResume === 'backend'">Backend</span>
+      <button
+        class="btn btn-primary me-2"
+      [ngClass]="{'selected': selectedResume === 'fullstack'}"
+        (click)="selectResume('fullstack')"
+      >
+        Full-Stack
+      </button>
+      <button
+        class="btn btn-primary me-2"
+      [ngClass]="{'selected': selectedResume === 'backend'}"
+        (click)="selectResume('backend')"
+      >
+      Backend
+      </button>
     </div>
   </div>
 </div>

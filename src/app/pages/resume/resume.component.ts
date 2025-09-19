@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-resume',
-  standalone: true,       // ✅ required
+  standalone: true,
   imports: [CommonModule], 
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
@@ -18,8 +18,8 @@ export class ResumeComponent {
     this.setResumeUrl();
   }
 
-  toggleResume() {
-    this.selectedResume = this.selectedResume === 'fullstack' ? 'backend' : 'fullstack';
+  selectResume(resume: 'fullstack' | 'backend') {
+    this.selectedResume = resume;
     this.setResumeUrl();
   }
 
