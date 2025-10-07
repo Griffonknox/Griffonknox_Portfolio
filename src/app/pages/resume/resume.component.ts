@@ -26,7 +26,7 @@ export class ResumeComponent {
   setResumeUrl() {
     const url =
       this.selectedResume === 'fullstack'
-        ? './images/ScottResumeFullStack.pdf'
+        ? './images/ScottResume2025.pdf'
         : './images/ScottResumeBackEnd.pdf';
     this.resumeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
