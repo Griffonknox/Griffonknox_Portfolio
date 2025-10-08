@@ -11,23 +11,14 @@ import { CommonModule } from '@angular/common';
 })
 export class ResumeComponent {
 
-  selectedResume: 'fullstack' | 'backend' = 'fullstack';
   resumeUrl!: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {
     this.setResumeUrl();
   }
 
-  selectResume(resume: 'fullstack' | 'backend') {
-    this.selectedResume = resume;
-    this.setResumeUrl();
-  }
-
   setResumeUrl() {
-    const url =
-      this.selectedResume === 'fullstack'
-        ? './images/ScottResume2025.pdf'
-        : './images/ScottResumeBackEnd.pdf';
+    const url = './images/ScottResume2025.pdf';
     this.resumeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 }
